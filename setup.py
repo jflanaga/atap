@@ -6,5 +6,5 @@ setup(
     version='0.1.0',
     description='a cookiecutter test project',
     author='Joseph Flanagan',
-    license='MIT',
+    license='Apache',
 )
