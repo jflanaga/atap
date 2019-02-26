@@ -15,7 +15,9 @@ DATASET = 'https://bit.ly/2I93Z94'
 
 
 def download(url=DATASET):
-    _, path = tempfile.mkstemp(suffix="-"+url.split("/")[-1], prefix="download-")
+    _, path = tempfile.mkstemp(
+        suffix="-" + url.split("/")[-1], prefix="download-"
+        )
 
     with open(path, 'wb') as fobj:
         req = requests.get(url, stream=True)

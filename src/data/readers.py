@@ -180,7 +180,7 @@ class HTMLCorpusReader(CategorizedCorpusReader, CorpusReader):
             'secs':   time.time() - started,
         }
 
-        
+
 class PickledCorpusReader(CategorizedCorpusReader, CorpusReader):
 
     def __init__(self, root, fileids=PKL_PATTERN, **kwargs):
